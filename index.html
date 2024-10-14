@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>HTML</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <form class="form" action="https://yandex.ru/search">
+      <input type="text" name="text">
+      <input type="submit" value="Поиск в Яндекс">
+    </form>
+    <form>
+      <label for="loginField">
+        Логин
+      </label>
+      <input id="loginField" type="text" name="login"><br>
+      <label for="passField">
+        Пароль
+      </label>
+      <input id="passField" type="password" name="pass"><br>
+      <input type="submit" value="Войти">
+    </form>
+    <form>
+      <label for="messageField">
+        Сообщение
+      </label><br>
+      <textarea name="message" id="messageField" cols="20" rows="10">Введите текст</textarea>
+    </form>
+    <form>
+      <label>
+        Завтрак
+        <input type="checkbox" name="breakfast" checked>
+      </label>
+      <label>
+        Обед
+        <input type="checkbox" name="lunch" checked>
+      </label>
+      <label>
+        Ужин
+        <input type="checkbox" name="dinner" checked>
+      </label>
+    </form>
+    <form action="/action_page.php">
+      <input list="browsers">
+      <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+        <option value="Firefox">
+      </datalist>
+    </form>
+    <hr>
+    <form action="/action_page.php"
+  oniput="x.value=parseInt(a.value)+parseInt(b.value)">
+      0
+      <input type="range" id="a" name="a" value="50">
+      100 +
+      <input type="namber" id="b" name="b" value="50">
+      =
+      <output name="x" for="a b"></output>
+      <br><br>
+      <input type="submit">
+    </form>
+  </body>
